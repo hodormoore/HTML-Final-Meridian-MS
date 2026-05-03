@@ -1,0 +1,377 @@
+﻿body {    background-color: mintcream;
+    margin: 0;
+    padding-top: 45px;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, white, darkblue);
+    z-index: 1000;
+}
+
+footer {
+    color: white;
+    font-family: cursive, sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    background: radial-gradient(darkblue 60%, blue);
+    color: white;
+    font-family: Cambria, sans-serif;
+    font-size: 42pt;
+    text-align: center;
+    border: 2px ridge black;
+    padding: 2px;
+    opacity: 0;
+    animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+h2 {
+    font-family: Cambria, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    padding: 2px;
+    color: darkblue;
+}
+
+p {
+    background-color: black;
+    color: white;
+}
+
+.dropDown {
+    float: right;
+    height: 50px;
+    width: 125px;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, sans-serif;
+    text-align: left;
+    background-color: blue;
+    margin: 2px 20px 2px 2px;
+    padding: 1px;
+    border: white inset 2px;
+    border-radius: 5px;
+
+}
+
+/*     HOME PAGE ITEMS:     */
+
+.homeBackground {
+    margin: 0px;
+    background-image: url("Meridian-MS-Town-Hall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.homeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    text-align: center;
+    /*background-color: rgba(0, 0, 116, 0.85);*/
+    border-radius: 5px;
+}
+
+.homeSection {
+    flex: 1;
+    background-color: navy;
+    color: white;
+    font-size: 22pt;
+    padding: 6px;
+    font-family: Cambria, sans-serif;
+    box-shadow: 5px 5px;
+}
+
+.homeBox {
+    flex: 1;
+    color: white;
+    font-size: 22pt;
+    font-family: Cambria, sans-serif;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.homeBox p {
+    margin: 0px;
+    background-color: navy;
+    padding: 25px 0 25px 0;
+    /*border: inset gray 4px;*/
+}
+
+.homeContent img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    /*border: inset gray 4px;*/
+}
+
+.homeLink img {
+    border: none;
+    cursor: pointer;
+}
+
+#homeHotels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 128, 0.95);
+    justify-content: space-evenly;
+    gap: 10px 20px;
+}
+
+#homeHotels > a {
+    font-size: 32px;
+    color: white;
+}
+
+homeHotelImage {
+    width: 250px;
+    height: 250px;
+}
+
+.homeHotelCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.homeHotelCard img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+#homeHotels > .homeHotelCard > a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+#homeHotels > .homeHotelCard > a:hover {
+    transform: scale(1.2);
+    color: mintcream;
+}
+
+
+/*     END HOME CONTENT     */
+
+.section {
+    background-color: navy;
+    color: white;
+    font-size: 22px;
+    border: 2px white groove;
+    padding: 12px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Cambria, sans-serif;
+}
+
+.pageBreak {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Cambria, sans-serif;
+}
+
+/*     HISTORY ITEMS:     */
+
+.historyBackground {
+    background-color: midnightblue;
+}
+
+historyArt {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.historySection {
+    background-color: navy;
+    color: white;
+    font-size: 26px;
+    border: 2px white groove;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    margin: 25px 50px 25px 50px;
+    padding: 16px;
+    font-family: Cambria, sans-serif;
+}
+
+#historyPictures {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 3px solid white;
+    border-radius: 20px 20px 3px 3px;
+    background-color: rgba(0, 0, 128, 0.5);
+    justify-content: space-evenly;
+    gap: 10px 20px;
+}
+
+#historyPictures > h3 {
+    text-align: center;
+    font-family: Cambria, sans-serif;
+    color: navy;
+}
+
+historyImage {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    padding: 8px 8px 12px 8px;
+    background-color: navy;
+    margin: 6px;
+    border: 6px solid white;
+    border-radius: 20px 20px 3px 3px;
+}
+
+historyImage > h2 {
+    margin: 0px;
+    font-size: 22px;
+    text-align: center;
+    font-family: Cambria, sans-serif;
+    font-weight: bold;
+    background-color: navy;
+    color: white;
+}
+
+historyImage > p {
+    margin: 0px;
+    font-size: 18px;
+    text-align: center;
+    font-family: Cambria, sans-serif;
+    background-color: navy;
+    color: white;
+}
+
+/*     END HISTORY CONTENT     */
+
+/*     CONTACT PAGE ITEMS:     */
+
+
+.contactBackground {
+    margin: 0px;
+    background-image: url("Meridian-Train-Station.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contactReps {
+    padding: 3px 20px 3px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin: 2px auto;
+    border: 2px gray outset;
+    background-color: rgba(0, 0, 128, 0.95);
+    color: white;
+    border-radius: 10px;
+}
+
+.contactTop {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 22px;
+    font-family: Calibri, sans-serif;
+    padding: 0px;
+}
+
+.contactTop h3 {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: white;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.contactPhone {
+    margin: 0px;
+    font-size: 22px;
+    color: gray;
+}
+
+.contactBottom {
+    display: flex;
+    align-items: center;
+}
+
+.contactBottom img {
+    margin: 0 8px 8px 2px;
+}
+
+.contactList {
+    margin: 0px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-family: Calibri, sans-serif;
+}
+
+#contactContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.contactReps table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 2px 8px 2px;
+    font-size: 18px;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+}
+
+.contactReps th, .contactReps td {
+    border: 1px white solid;
+    font-weight: bold;
+    padding: 8px 22px;
+    text-align: center;
+}
+
+.contactReps th {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+    color: navy;
+}
+
+.contactReps > h2 {
+    color: white;
+    font-family: Cambria, sans-serif;
+    font-size: 32px;
+}
+
+/*     END CONTACT CONTENT     */
